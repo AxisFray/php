@@ -10,7 +10,7 @@
     <fieldset>
 <legend>Formularz zgloszeniowy</legend>
 <p><b>Wybor jezyka:</b></p>
-<select name="jezyk" size="4" multiple>
+<select name="jezyk[]" size="4" multiple>
     <option name="polski">polski</option>
     <option name="angielski">angielski</option>
     <option name="niemiecki">niemiecki</option>
@@ -32,6 +32,14 @@ Adres email:
 <br>
 <input type="checkbox" name="zgoda">Zgoda na prz. d. os.
 <button name="wys" type="submit">Wyslij</button><button name="wyczysc" type="reset">Wyczysc</button>
+Ulubiona pora roku:
+<select name="f5" >
+    <option >Wiosna</option>
+    <option >Lato</option>
+    <option >Jesien</option>
+    <option >Zima</option>
+
+</select>
 </fieldset>
 </form>
 

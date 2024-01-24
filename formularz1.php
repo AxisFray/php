@@ -5,8 +5,11 @@ echo "Wiek - ".$_POST['f3']."<br>";
 echo "Email - ".$_POST['f4']."<br>";
 echo "Wykształcenie - ".$_POST['wyk']."<br>";
 echo "Zgoda - ".$_POST['zgoda']."<br>";
-echo "Jezyk - ".$_POST['jezyk']."<br>";
-
+//echo "Jezyk - ".$_POST['jezyk']."<br>";
+foreach($_POST['jezyk'] as $j)
+{
+    echo "<li>".$j."<li><br>";
+}
 
 
 ?>
