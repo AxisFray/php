@@ -6,7 +6,7 @@
 
     </head>
 <body>
-<form action="formularz1.php" method="post">
+<form action="formularz1.php" method="post" enctype="multipart/form-data">
     <fieldset>
 <legend>Formularz zgloszeniowy</legend>
 <p><b>Wybor jezyka:</b></p>
@@ -29,6 +29,8 @@ Adres email:
 <label><input type="radio" name="wyk" id="w" value="Podstawowe">Podstawowe</label><br>
 <label><input type="radio" name="wyk" id="w" value="srednie">srednie</label><br>
 <label><input type="radio" name="wyk" id="w" value="wyzsze">wyzsze</label><br>
+<br>
+<label>Prześlij plik:  <input type="file" name="plik1"> </label>
 <br>
 <input type="checkbox" name="zgoda">Zgoda na prz. d. os.
 <button name="wys" type="submit">Wyslij</button><button name="wyczysc" type="reset">Wyczysc</button>
