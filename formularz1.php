@@ -20,6 +20,8 @@ else{
         echo "<p style='color:red'>Nie zaznaczyles jezyka</p>";
     }
 
-echo $_FILES['plik1']['tmp_name']." ". $_FILES['plik1']['size']." ". $_FILES['plik1']['type'];
-
+echo $_FILES['plik1']['tmp_name']." , ". $_FILES['plik1']['size']." , ". $_FILES['plik1']['type'];
+//move_uploaded_file()
+//is_uploaded_file()
 ?>
+
