@@ -9,9 +9,9 @@
 <body>
     <form action="laczenie_z_baza.php" method="post">
         <?php
-        $pol =  mysqli_connect('localhost','root','','ksiegarnia')
+        $pol =  mysqli_connect('localhost','root','','ksiegarnia');
         $zapyt3 = "select * from klient where Id_klienta = 1";
-        wynik3 = mysqli_query($pol,$zapyt3);
+        $wynik3 = mysqli_query($pol,$zapyt3);
         $dane = mysqli_fetch_array($wynik3);
         ?>
 
