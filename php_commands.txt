@@ -1,0 +1,38 @@
+ $mysqli = new mysqli("localhost","root","","nazwa_bazy");
+#laczenie z baza
+
+if (mysqli_connect_errno()) {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  exit();
+}
+#sprawdzenie czy polaczno
+
+if ($result = mysqli_query($mysqli, "SELECT * FROM Persons")) {
+  echo "Returned rows are: " . mysqli_num_rows($result);
+  // Free result set
+  mysqli_free_result($result);
+}
+#wysylanie zapytania do bazy
+
+mysqli_query(connection,zapytanie) 
+zwraca wynik
+
+mysqli_num_rows(result)
+zwraca liczbe wierszy wyniku
+
+mysqli_close(connection)
+zakonczenie polaczenia z baza
+
+mysqli_fetch_array(result)
+2 parametr resulttype opcjonalny , zwraca tablice z parametrami
+    MYSQLI_ASSOC
+    MYSQLI_NUM
+    MYSQLI_BOTH (this is default)
+
+mysqli_connect_errno()
+zwraca kod bledu, jesli brak to 0
+
+mysqli_connect_error();
+zwraca kod bledu, jesli nie ma to null
+
+
