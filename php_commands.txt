@@ -1,4 +1,6 @@
- $mysqli = new mysqli("localhost","root","","nazwa_bazy");
+ - - - - - - - - - - - - - - - - - - - - ŁĄCZENIE Z BAZĄ  - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$mysqli = new mysqli("localhost","root","","nazwa_bazy");
 #laczenie z baza
 
 if (mysqli_connect_errno()) {
@@ -35,4 +37,27 @@ zwraca kod bledu, jesli brak to 0
 mysqli_connect_error();
 zwraca kod bledu, jesli nie ma to null
 
+ - - - - - - - - - - - - - - - - - - - - PLIKI COOKIE  - - - - - - - - - - - - - - - - - - - - - - - - -
 
+setcookie($nazwa, $wartosc, $koniec, $sciezka, $domena, $bezpieczne);
+//Wszelkie zapamiętywanie zalogowanego użytkownika, oddania głosu w ankiecie itp. są obsługiwane właśnie z //wykorzystaniem cookies. Zasada jest prosta – jeśli cookie istnieje, to znaczy, że głos został oddany. //Jeżeli nie, można oddać głos, po czym cookie jest tworzone.
+// zapisanie oddania głosu jednorazowego
+setcookie('oddano_glos', '1');
+
+
+    $wartość - wartość przypisana
+    $koniec - czas wygaśnięcia (wyznaczany zazwyczaj względem czasu aktualnego time()
+    Jeśli nie został podany ciasteczko istnieje do momentu usunięcia przez użytkownika.
+    Jeśli podamy czas w przeszłości, ciasteczko zostaje usunięte np.: time()-3600.
+    $sciezka i $domena - stosowane do określenia adresów, dla których cookie jest ważne
+    $bezpieczne - true oznacza, że cookie nie będzie wysyłane przez zwykłe połączenie HTTP
+
+
+// w przypadku gdy głosować można raz dziennie
+setcookie('oddano_glos', '1', time()+3600*24);
+
+if(isset($_COOKIE['aktywacja']))
+   {echo "Ciasteczko istnieje";}
+else
+   {echo "Brak ciastecza o nazwie aktywacja";}
+//sprawdzanie czy pliki cookie istnieja
