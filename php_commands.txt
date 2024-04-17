@@ -29,6 +29,7 @@ H - 24-hour format of an hour (00 to 23)
 i - Minutes with leading zeros (00 to 59)
 s - Seconds, with leading zeros (00 to 59)
 u - Microseconds (added in PHP 5.2.2)
+
 getdate(time)
     [seconds] - seconds
     [minutes] - minutes
@@ -42,6 +43,8 @@ getdate(time)
     [month] - name of the month
     [0] - seconds since Unix Epoch
 
+time()
+//The time() function returns the current time in the number of seconds since the Unix Epoch (January 1 1970 00:00:00 GMT).
 
 - - - - - - - - - - - - - - - - - - - - ŁĄCZENIE Z BAZĄ  - - - - - - - - - - - - - - - - - - - - - - - - -
 
