@@ -1,4 +1,4 @@
-.button1 {
+button {
     width: 300px;
     height: 120px;
     padding: 2px;
@@ -20,7 +20,11 @@
 
 body {
     background-color: rgb(170, 127, 171);
-
+    font-family: fantasy;
+}
+footer{
+    text-align:right;
+    font-family: fantasy;
 }
 
 .div2 {

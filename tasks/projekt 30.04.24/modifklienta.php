@@ -10,7 +10,7 @@
 
 <body>
     <?php
-    $con = mysqli_connect('localhost', 'root', '', 'uzytkownicy');
+    $con = mysqli_connect('localhost', 'root', '', 'ksiegarnia_internetowa');
     
 
         if ($_POST['akcja'] == "dodaj") {
