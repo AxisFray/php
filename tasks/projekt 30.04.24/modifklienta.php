@@ -39,7 +39,7 @@
 
             }
         }
-    
+        echo "<a href='admin.html'> <button>Powrot</button></a>";
     ?>
 </body>
 

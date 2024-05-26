@@ -26,7 +26,7 @@ elseif($akcja==0){
     $licznik=0;
 foreach($tab as $i)
 {
-    if(strstr($i,$frag)==false){
+    if(strstr($i,$tytul)==false){
         echo "<b>Ksiazka o podanym tytule nie istnieje</b>";
     }
     else{
@@ -34,8 +34,9 @@ foreach($tab as $i)
         $zap2 = "SELECT * from ksiazki where tytul='".$i."'";
         $zap3 = "DELETE from ksiazki where tytul='".$i."'";
         $wyn2 = mysqli_query($con,$zap2);
+        $wyn4= mysqli_query($con,$zap3);
         $tab2 = mysqli_fetch_row($wyn2);
-        echo "Ksiazka ".$licznik." jest usunieta";
+        echo "Ksiazka ".$licznik." jest usunieta<br>";
         echo "Tytul : ".$tab2[1]."<br>";
         echo "Cena : ".$tab2[2]."<br>";
         echo "Autor : ".$tab2[3]."<br>";
