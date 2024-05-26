@@ -54,10 +54,10 @@ elseif($akcja=1)
         echo "Cena : ".$cena."<br>";
         echo "Autor : ".$autor."<br>";
         echo "<br>";
-        echo "<a href='admin.html'> <button>Powrot</button></a>";
+        
     }
 }
-
+echo "<br><a href='admin.html'> <button>Powrot</button></a>";
 
 
 ?>
