@@ -27,6 +27,9 @@
 
 <div id="left">
     <h3>NAJTANIEJ</h3>
+    Włochy  od 1200zł<br>
+    Francja od 1200zł<br>
+    Hiszpania   od 1400zł<br>
     </div>
 <div id="center">
     <h3>TU BYLIŚMY</h3>
